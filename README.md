@@ -1,5 +1,5 @@
 # Basit TCP Port Tarayıcı
-Shodan kullanıldığını biliyorum proje mantığı anlamak adına yapılmıştır.
+-Shodan kullanıldığını biliyorum proje mantığı anlamak adına yapılmıştır.
 Bu proje, ağ güvenliği ve Python "Socket" programlama mantığını kavramak amacıyla geliştirdiğim temel seviye bir ağ tarama aracıdır.
 
 Projenin Amacı
@@ -21,7 +21,7 @@ Kurulum ve Kullanım
 2. python scanner.py
 3. Hedef adresi girin (kendi adresinizde de deneyebilirsiniz(localhost)).
 
-Not
+-Not
 Bu yazılım sadece eğitim amaçlıdır.Başkalarına ait sistemlerde izinsiz tarama yapmak yasal suçtur.
 
 Emircan Bingöl
