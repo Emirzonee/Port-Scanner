@@ -1,14 +1,27 @@
-# 🛡️ Simple Python Port Scanner
-Bu proje, Python `socket` kütüphanesi kullanılarak geliştirilmiş temel bir ağ güvenlik aracıdır. Belirtilen hedef IP üzerindeki açık portları (1-1024 arası) tespit eder.
+# Basit TCP Port Tarayıcı
 
-## 🚀 Özellikler
-- **TCP Connect Scan:** Hedef portlara tam bağlantı kurarak durumlarını kontrol eder.
-- **DNS Çözümleme:** Alan adlarını (örn: google.com) otomatik olarak IP adresine çevirir.
-- **Hata Yönetimi:** Bağlantı kopmaları veya kullanıcı iptali (CTRL+C) durumlarını yönetir.
-## 🛠️ Kullanılan Teknolojiler
-- Python 3.x
-- Socket Library (Networking)
-## 💻 Nasıl Çalıştırılır?
-1. Repoyu klonlayın:
-   ```bash
-   git clone [https://github.com/Emir.zonee/Simple-Port-Scanner.git](https://github.com/Emir.zonee/Simple-Port-Scanner.git)
+Bu proje, ağ güvenliği ve Python "Socket" programlama mantığını kavramak amacıyla geliştirdiğim temel seviye bir ağ tarama aracıdır.
+
+Projenin Amacı
+Bu proje, hedef bir sistem üzerinde hangi servislerin açık olduğunu tespit etmeye yarar. Hazır araçlar (Nmap vb.) kullanmak yerine, arka planda dönen TCP bağlantı (handshake) mantığını anlamak için bu aracı kendim kodladım.
+
+Nasıl Çalışır? (Port Scanner Mantığı)
+Bir bilgisayarda iletişim sağlayan binlerce sanal gate (port) bulunur. Bu yazılım:
+1. Hedef IP adresini veya alan adını alır.
+2. Belirtilen aralıktaki (bende 1-1024) portlara tek tek TCP Request gönderir.
+3. Eğer hedef sistemden olumlu yanıt gelirse, o portun available olduğunu raporlar.
+4. Bu işlem Python'un yerleşik socket kütüphanesi ile gerçekleştirilir.
+
+- Python 3
+- Socket Library
+- Datetime 
+
+Kurulum ve Kullanım
+1. Python yüklü olmalı 
+2. python scanner.py
+3. Hedef adresi girin (kendi adresinizde de deneyebilirsiniz(localhost)).
+
+Not
+Bu yazılım sadece eğitim amaçlıdır.Başkalarına ait sistemlerde izinsiz tarama yapmak yasal suçtur.
+
+Emircan Bingöl
